@@ -19,6 +19,7 @@
                 <table>
                     <thead>
                         <tr>
+                            <th scope="col" id="board">추천수</th>
                             <th scope="col" id="board">노래</th>
                             <th scope="col" id="board">가수</th>
                             <th scope="col" id="board">작성자</th>
@@ -29,6 +30,7 @@
                     <tbody>
                         {% for board in boards %}
                         <tr>
+                            <td>{{ board.like_count }}</td>
                             <td><a href="{% url 'main:request_detail' board.id %}">{{board.song}}</a></td>
                             <td>{{board.singer}}</td>
                             <td>{{board.writer}}</td>
