@@ -16,13 +16,13 @@
           <!--만약 유저가 좋아요를 눌렀다면 채운 하트로 변경-->
           {% if user in board.like_user_set.all %}
               <div class="alt-service-icon">
-                  <i class="fas fa-heart" id ="like-icon" style="color:red;"></i>
+                  <i class="far fa-heart" id ="like-icon" style="color:red;"><h7 style='color:white;'> << 추천하기</h7></i>
               </div> 
           <!--아니면 비워진 하트-->
           {% else %}
 
               <div class="alt-service-icon">
-                  <i class="far fa-heart" id ="like-icon" style="color:red;"></i> 
+                  <i class="far fa-heart" id ="like-icon" style="color:red;"><h7 style='color:white;'> << 추천하기</h7></i>
               </div>
 
           {% endif %}
@@ -59,6 +59,7 @@
         <hr><h3> 댓글목록</h3><hr>
         
        <div>
+
         {% for comment in comments %}
         <div>
             <p>
@@ -66,9 +67,11 @@
   
                 </p>
             <p>{{comment.content}}</p>
-            <br>
-            <a href="{% url 'main:edit_comment' comment.id %}">수정하기 &nbsp</a>
-            <a href="{% url 'main:delete_comment' comment.id %}">&nbsp삭제하기</a>
+        {% if user == comment.writer %}
+        <a href="{% url 'main:edit_comment' comment.id %}">수정하기</a>
+        <a href="{% url 'main:delete_comment' comment.id %}">삭제하기</a>
+        {% else %}
+        {% endif %}
 
             <hr>
         </div>

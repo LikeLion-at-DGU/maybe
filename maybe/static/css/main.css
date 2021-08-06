@@ -4511,36 +4511,58 @@ input::-moz-focus-inner {
 
 .next{
 	position:fixed;
-	right:500px;
+	right:250px;
 	top: 350px;
-
-}
-
-.before{
+ 
+ }
+ 
+ .before{
 	position:fixed;
-	left:500px;
+	left:250px;
 	top: 350px;
-
-}
-.next2{
+ 
+ }
+ .next2{
 	position:fixed;
-	right:500px;
+	right:250px;
 	top: 450px;
-
-}
-
-.before2{
+ 
+ }
+ 
+ .before2{
 	position:fixed;
-	left:500px;
+	left:250px;
 	top: 450px;
-
-}
-.img_voice{
-
+ 
+ }
+ 
+ .beforetohigh{
+	position:fixed;
+	right:250px;
+	top: 350px;
+ 
+ }
+ 
+ 
+ .beforetolow{
+	position:fixed;
+	left:250px;
+	top: 450px;
+ 
+ }
+ 
+ .testmain{
+	position:fixed;
+	right:250px;
+	top: 450px;
+ }
+ 
+ .img_voice{
+ 
 	position: relative;
 	text-align: center;
 	margin:auto
- }
+  }
 
  #login, #signup{
 	 font-family: ablack;
