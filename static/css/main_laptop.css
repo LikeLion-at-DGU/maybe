@@ -2354,10 +2354,6 @@ input::-moz-focus-inner {
 			.image.main img {
 				width: 100%;
 			}
-		.img_voice img{
-			width: 1000px;
-		}
-		
 
 /* List */
 
@@ -2686,16 +2682,12 @@ input::-moz-focus-inner {
 	table {
 		margin: 0 0 2em 0;
 		width: 100%;
-		
-		
 	}
 
 		table tbody tr {
 			border: solid 1px rgba(255, 255, 255, 0.125);
 			border-left: 0;
 			border-right: 0;
-			
-			
 		}
 
 			table tbody tr:nth-child(2n + 1) {
@@ -3964,7 +3956,7 @@ input::-moz-focus-inner {
 					color: inherit;
 				}
 
-	/* @media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px) {
 
 		#footer {
 			background-color: #2e3141;
@@ -3977,7 +3969,7 @@ input::-moz-focus-inner {
 			padding-top: 6.5em;
 		}
 
-	} */
+	}
 
 	@media screen and (max-width: 980px) {
 
@@ -4126,13 +4118,13 @@ input::-moz-focus-inner {
 	/* visibility: hidden; */
 }
 #button1{
-	margin-left: 46%;
+
 	margin-top: 50px;
 }
-#button1:focus + .carousel{
-	visibility: visible;
+.button_submit{
+	display:flex;
+	justify-content: center;
 }
-
 /* Tiles */
 
 .tiles {
@@ -4274,13 +4266,32 @@ input::-moz-focus-inner {
          max-height: 15em;
          opacity: 1;
       }
-
-#title1{
+/*윤회 8/11*/
+#service1_title1,#service1_title2,#service1_title3, #service1_star1,#service1_star2{
    font-family:  'dream4', sans-serif;
    font-weight: initial;
 }
-
-
+#service2_title1,#service2_title2,#service2_title3, #service2_title4, #service2_star1,#service2_star2{
+	font-family:  'dream4', sans-serif;
+	font-weight: initial;
+ }
+ #service3_title1,#service3_title2,#service3_title3, #service3_star1,#service3_star2{
+	font-family:  'dream4', sans-serif;
+	font-weight: initial;
+ }
+ #board_title1, #board_title2, #board_title3{
+	font-family:  'dream4', sans-serif;
+	font-weight: initial;
+ }
+ #board_inner_title1{
+	font-family:  'dream4', sans-serif;
+	font-weight: initial;
+ }
+ #board_inner_explain{
+	font-family: dream4 !important;
+	text-align: left;
+	font-weight: 50;
+ }
   #new{
 	font-family:  'Do Hyeon', sans-serif;
 	font-size: 25px;
@@ -4336,27 +4347,90 @@ input::-moz-focus-inner {
 #main_title{
 	font-family: ablack;
 	font-weight :initial;
+	text-align: center;
 
 }
 #main_subtitle{
 	font-family: dream4;
 	margin-top:-30px;
+	text-align: center;
 }
 
 #main_explain{
 	font-family: dream4;
+	text-align: center;
 }
 
 #service_title{
 	font-family: ablack !important;
 	font-weight :initial;
 }
-
-#service1_explain{
+/*윤회*/
+#service1_explain1, #service1_explain2{
 	font-family: dream4 !important;
+	text-align: left;
 	font-weight: 50;
 }
 
+#service2_explain1{
+	font-family: dream4 !important;
+	text-align: left;
+	font-weight: 50;
+}
+
+#service3_explain1{
+	font-family: dream4 !important;
+	text-align: left;
+	font-weight: 50;
+}
+#service1_woman_avg, #service1_man_avg,#service1_woman_avg_value, #service1_man_avg_value{
+	text-align: center;
+}
+#user_username_plus{
+	font-family: dream4;
+	font-size: 24px;
+	font-weight: bold;
+}
+.service1_username{
+	display: flex;
+}
+#testmain_button {
+	width: 100%;
+	font-weight: 100;
+	font-size: 13px;
+	text-align: center;
+	font-family: 'dream4';
+}
+#gotoservice2_button{
+	width: 103%;
+	font-weight: 100;
+	font-size: 13px;
+	text-align: center;
+	font-family: 'dream4';
+}
+
+#beforetohigh_button, #beforetolow_button{
+	width:120%;
+	font-weight: 100;
+	font-size: 13px;
+	text-align: center;
+	font-family: 'dream4';
+}
+.low_result_login, .low_result_nologin{
+	display: flex;
+}
+.low_result_nologin{
+	font-size: 20px; 
+	font-weight: bold;
+}
+.high_result_login, .high_result_nologin{
+	display: flex;
+}
+.high_result_nologin{
+	font-size: 20px; 
+	font-weight: bold;
+}
+/**/
 #level{
 	font-size: 50px;
 	font-weight: initial;
@@ -4365,7 +4439,7 @@ input::-moz-focus-inner {
 
 .nav_lecture{
 	display:flex;
-	margin-right:7%;
+	margin-right:5%;
 	font-family: dream4;
  }
  
@@ -4397,21 +4471,22 @@ input::-moz-focus-inner {
 	font-family: ablack ;
 	font-size: 20px;
 	font-weight: lighter;
+
 }
 
-
-#service1_detail_title{
+#service1_detail_title1, #service1_detail_title2{
 	font-family: dream4;
 }
-
-#service_main_title{
+/*윤회*/
+#service1_main_title{
 	font-family: dream4 !important;
 	font-weight :bold;
 	font-size: initial;
 }
-
+/**/
 #service1_menu{
 	font-family: dream4;
+	font-size: 24px;
 }
 
 
@@ -4454,7 +4529,7 @@ input::-moz-focus-inner {
 	visibility: hidden;
  }
  .service1{
-	margin-top: 100px;
+	margin-top: 160px;
 	text-align: center;
  }
 
@@ -4468,6 +4543,7 @@ input::-moz-focus-inner {
  .low_level1,.low_level2,.low_level3{
 	height: 600px;
  }
+
  .low_level1,.low_level2,.low_level3,.high_level1,.high_level2,.high_level3{
  width: 550px;
  color: white;
@@ -4500,7 +4576,6 @@ input::-moz-focus-inner {
 .before{
  display:inline;
 }
-
 .next2{
  display:inline;
 }
@@ -4509,49 +4584,52 @@ input::-moz-focus-inner {
  display:inline;
 
 }
-
 .low_result,.high_result{
  position: absolute;
- top:80px;
+ top:50px;
  padding: 30px; 
 }
-
 .beforetohigh{
 
  position: absolute;
- top:160px;
+ top:150px;
  padding: 30px;   
 }
 
 .beforetolow{
  position: absolute;
- top:160px;
+ top:150px;
  padding: 30px;
+}
+
+.gotoservice2{
+    position: absolute;
+    top:270px;
+    padding: 30px;
 }
 
 .testmain{
  position: absolute;
  padding: 30px;
- top:240px;
+ top:210px;
 }
-
 .img_voice{
+	display: none;
 	position: relative;
 	text-align: center;
 	margin:auto
  }
 
-#login, #signup{
-	font-family: ablack;
-	margin-bottom: 0;
-	font-weight: initial;
-	font-size: 30px;
-}
+ #login, #signup{
+	 font-family: ablack;
+	 margin-bottom: 0;
+	 font-weight: initial;
+	 font-size: 30px;
+ }
 
 .nav_lecture{
     visibility:hidden;
 }
-
 
 .nav_lecture_js:hover{
 	cursor: pointer;
@@ -4566,7 +4644,7 @@ input::-moz-focus-inner {
 
 #low_result,#high_result{
 	font-family: 'dream4';
-	font-size: 18px;
+	font-size: 24px;
 }
 #btn-change-text{
 	margin-bottom:10%;
@@ -4574,12 +4652,12 @@ input::-moz-focus-inner {
 
 #user_username{
 	font-family: dream4;
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: bold;
  }
  
  #user{
-	font-size: 20px; 
+	font-size: 24px; 
 	font-weight: bold;
 	font-family: dream4;
  }
@@ -4590,5 +4668,166 @@ input::-moz-focus-inner {
  }
 
  #table_title{
+	font-family: dream4;
+ }
+
+ /*윤회*/
+ .p_gap_short{
+	 margin-top: -30px;
+ }
+ .h5_gap_short{
+	 margin-top: -15px;
+ }
+ .want_song{
+	font-size: 20px;
+ }
+ #normal{
+	font-size: 20px;
+ }
+ .result_boolean, .result_detail{
+	font-size: 20px;
+ }
+ #mypage_user{
+	 text-align: center;
+ }
+ #mypage_user_key, #mypage_user_value{
+	 display: flex;
+ }
+ #mypage_td{
+	 color:white;
+ }
+ .container{
+	 font-family: 'Do Hyeon', sans-serif;
+ }
+ #content{
+	margin-top: 150px;
+ }
+ #like-icon{
+	 color: red;
+ }
+ #edit_p, #new_p{
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 40px;	 
+ }
+ #board_p{
+	text-align: center; 
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: larger;
+ }
+ .board_content{
+	 padding: 0 1.25em;
+ }
+
+.p_big{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.service1_instruction{
+	display:flex;
+	padding: 50px 0px;
+}
+
+.service1_step{
+	width:55%;
+	margin-right:4%;
+}
+
+.service1_video{
+	width:45%;
+
+}
+
+.service1_video iframe{
+	width:100%;
+	height:100%;
+}
+
+.service2_instruction{
+	display:flex;
+	padding: 50px 0px;
+}
+
+.service2_step{
+	width:50%;
+	margin-right:4%;
+}
+
+.service2_video{
+	width:50%;
+
+}
+
+.service2_video iframe{
+	width:100%;
+	height:100%;
+}
+
+
+.service3_instruction{
+	display:flex;
+	padding: 50px 0px;
+}
+
+.service3_step{
+	width:50%;
+	margin-right:4%;
+}
+
+.service3_video{
+	width:50%;
+
+}
+
+.service3_video iframe{
+	width:100%;
+	height:100%;
+}
+
+.service3_teacher h4{
+	font-family: dream4 !important;
+	font-weight: 50;
+	text-align:center;
+}
+
+#board_inner_title1,#service1_main_title,#service2_main_title,#service3_main_title{
+	font-family: dream4;
+ }
+ 
+ #board_inner_explain{
+	font-family: dream4;
+	font-weight: 100;
+ }
+ 
+ #board_p{
+	font-family: 'Do Hyeon', sans-serif;
+ }
+ 
+ #service1_title1,#service1_title2,#service1_title3,#service2_title1,#service2_title2,#service2_title3,#service3_title1,
+ #service3_title2,#service3_title3,#board_title1,#board_title2,#board_title3{
+	font-family: dream4;
+ }
+ 
+ #service1_step_p,#service2_step_p,#service3_step_p{
+	font-family: dream4 !important;
+	
+ }
+ 
+ #testmain_button{
+ font-family: dream4;
+ }
+ #beforetohigh_button,#beforetolow_button, #gotoservice2_button{
+ font-family: dream4;
+ }
+ 
+ #low_result,#high_result{
+ font-family: dream4;
+ }
+ 
+ #gotoservice3_button{
+	font-family: dream4;
+ }
+ 
+ .low_result_nologin{
 	font-family: dream4;
  }
