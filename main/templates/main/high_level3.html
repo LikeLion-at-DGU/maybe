@@ -12,6 +12,7 @@
  <div class = "gotoservice2">
    <a href = "{% url 'main:service2'%}"><button id="gotoservice2_button">제 2강으로 넘어가기</button></a>
  </div>
+
  
  <div class = "service1">
    <div class = "before2">
@@ -153,7 +154,7 @@
    </div>
    <div id="high_result"></div>
    {% else %}
-   <div class="high_result_nologin">로그인하시면 자신의 음을 멋있게 저장할 수 있을걸요?</div>
+   <div class="high_result_nologin">로그인 시, 테스트 결과 저장</div>
    {% endif %}
  </div>
 {% endblock %}
